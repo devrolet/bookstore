@@ -6,6 +6,7 @@
     
         <link rel="stylesheet" href="/css/app.css">
         <link rel="stylesheet" href="/css/foundation.css">
+        <link rel="stylesheet" href="/css/style.css">
     
     </head>
     <body>
@@ -37,7 +38,9 @@
         <footer>
             <div class="row">
                 <div class="large-12 columns">
-                    <p>Bookstore &copy; 2017 <a href="http://www.gogetterdesign.com" target="_blank">GoGetter Design</a> | <a href="/manage">Manage</a></p>
+                    <p>
+                        Bookstore &copy; 2017 <a href="http://www.gogetterdesign.com" target="_blank">GoGetter Design</a> | <a href="/manage">Manage</a>
+                    </p>
                 </div>
             </div>
         </footer>

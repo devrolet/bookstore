@@ -1,39 +1,14 @@
 {>"layouts/master" /}
 
 {<body}
-    <div class="large-3 columns book">
-    	<img src="/img/mongo1.jpg">
-    	<h4>The Definitive Guide to MongoDB</h4>
-    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    	<div class="price">Buy it for <span>$24.99</span></div>
-    	<br>
-    	<a href="/books/details/1" class="button small">Details</a>
-    </div>
-
-    <div class="large-3 columns book">
-    	<img src="/img/mongo2.jpg">
-    	<h4>MongoDB: The Definitive Guide</h4>
-    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    	<div class="price">Buy it for <span>$29.99</span></div>
-    	<br>
-    	<a href="/books/details/1" class="button small">Details</a>
-    </div>
-
-    <div class="large-3 columns book">
-    	<img src="/img/mongo3.jpg">
-    	<h4>Pentaho Analytics for MongoDB</h4>
-    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    	<div class="price">Buy it for <span>$19.99</span></div>
-    	<br>
-    	<a href="/books/details/1" class="button small">Details</a>
-    </div>
-
-    <div class="large-3 columns book">
-    	<img src="/img/mongo4.jpg">
-    	<h4>50 Tips &amp; Tricks for MongoDB Developers</h4>
-    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    	<div class="price">Buy it for <span>$34.99</span></div>
-    	<br>
-    	<a href="/books/details/1" class="button small">Details</a>
-    </div>
+    {#books}
+        <div class="large-3 columns book end">
+        	<img src="/img/{.cover}">
+        	<h4>{.title}</h4>
+        	<p>{.truncText}</p>
+        	<div class="price">Buy it for <span>{.price}</span></div>
+        	<br>
+        	<a href="/books/details/{._id}" class="button small">Details</a>
+        </div>
+    {/books}
 {/body}

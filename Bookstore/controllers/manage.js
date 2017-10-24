@@ -9,7 +9,7 @@ module.exports = function(router) {
 		res.render('manage/books/index');
 	});
 
-	router.get('/', function(req, res) {
+	router.get('/categories', function(req, res) {
 		res.render('manage/categories/index');
 	});
 };
